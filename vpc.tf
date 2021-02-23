@@ -3,7 +3,7 @@ module "vpc" {
     version = "~> 2.3"
 
     project_id   = var.project_id
-    network_name = "example-vpc"
+    network_name = "test-vpc"
     routing_mode = "GLOBAL"
 
     subnets = [
