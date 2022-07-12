@@ -1,7 +1,8 @@
-module "network_example_basic_auto_mode" {
-  source  = "terraform-google-modules/network/google//examples/basic_auto_mode"
+module "network" {
+  source  = "terraform-google-modules/network/google"
   version = "5.1.0"
   # insert required variables here
+  
   subnets = [
   {
     subnet_name   = "gaurav-subnet"
