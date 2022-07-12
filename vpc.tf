@@ -3,6 +3,8 @@ module "network" {
   version = "5.1.0"
   # insert required variables here
   
+  network_name = "hashicatnet"
+  project_id = "p-vgr6bafh7p6lnqbud123rtgoaou7"
   subnets = [
   {
     subnet_name   = "gaurav-subnet"
