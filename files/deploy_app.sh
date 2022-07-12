@@ -12,6 +12,7 @@ cat << EOM > /var/www/html/index.html
   <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Meow World!</h2></center>
   Welcome to ${PREFIX}'s app. Live HashiCat in Chez JohnnYB.
+  I've edited the static html.
   <!-- END -->
 
   </div>
