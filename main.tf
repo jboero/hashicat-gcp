@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     google = {
-      source  = "hashicorp/google"
+      source  = "hashicorp/terraform-provider-google"
       version = "=3.4.0"
     }
   }
