@@ -13,3 +13,9 @@ module "network" {
   }
 ]
 }
+
+module "cloud-run_example_simple_cloud_run" {
+  source  = "GoogleCloudPlatform/cloud-run/google//examples/simple_cloud_run"
+  version = "0.3.0"
+  project_id =  "p-vgr6bafh7p6lnqbud123rtgoaou7"
+}
