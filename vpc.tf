@@ -1,6 +1,6 @@
 module "network_example_basic_auto_mode" {
   source  = "terraform-google-modules/network/google//examples/basic_auto_mode"
-  version = "3.4.0"
+  version = "5.1.0"
   # insert required variables here
   subnets = [
   {
