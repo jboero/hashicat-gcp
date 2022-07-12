@@ -1,5 +1,13 @@
+terraform {
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "=3.68.0"
+    }
+  }
+}
+
 provider "google" {
-  version = "~> 2.0"  
   project = var.project
   region  = var.region
 }
@@ -17,7 +25,7 @@ resource "google_compute_network" "hashicat" {
 # }
 
 # resource "google_compute_firewall" "http-server" {
-#   name    = "default-allow-ssh-http"
+#   name    = "${var.prefix}-default-allow-ssh-http"
 #   network = google_compute_network.hashicat.self_link
 
 #   allow {
@@ -88,7 +96,8 @@ resource "google_compute_network" "hashicat" {
 
 #   provisioner "remote-exec" {
 #     inline = [
-#       "sudo add-apt-repository universe",
+#       "sudo apt -y update",
+#       "sleep 15",
 #       "sudo apt -y update",
 #       "sudo apt -y install apache2",
 #       "sudo systemctl start apache2",
