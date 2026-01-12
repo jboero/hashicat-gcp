@@ -7,8 +7,6 @@ output "catapp_ip" {
   value = "http://${google_compute_instance.hashicat.network_interface.0.network_ip}"
 }
 
-/*
 output "gcr_url" {
   value = "module.cloud-run_example_simple_cloud_run.service_url"
 }
-*/
